@@ -1,0 +1,178 @@
+/* Repository Interface Styles */
+.repository-add {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+}
+
+.repository-actions {
+    gap: 0.5rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.repository-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.action-button {
+    transition: all 0.2s;
+}
+
+.action-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading Indicator Styles */
+.custom-loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.operation-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Status and Error Styles */
+.error-message {
+    padding: 1rem;
+    background: #fee2e2;
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    color: #dc2626;
+    margin: 0.5rem 0;
+}
+
+.sync-status {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.status-row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #e2e8f0;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+/* Status Colors */
+.status-active .status-indicator { background: #10b981; }
+.status-syncing .status-indicator { background: #3b82f6; }
+.status-error .status-indicator { background: #ef4444; }
+.status-inactive .status-indicator { background: #9ca3af; }
+.status-success .status-indicator { background: #28a745; }
+.status-pending .status-indicator { background: #ffc107; }
+
+.status-text {
+    font-size: 0.875rem;
+    margin-right: 1rem;
+}
+
+/* Loading State */
+.loading-state {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Table Styles */
+.gradio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.gradio-table th {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.gradio-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.gradio-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Input Styles */
+.repository-input input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.repository-input input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* Status Message */
+.status-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    background: #f8f9fa;
+    border: 1px solid #e2e8f0;
+}
